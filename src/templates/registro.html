@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title">
+                    Alien T-shirt´s
+                </div>
+                <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                        <form method="post" action="/RegistroRespuesta">
+                            <div class="form-group">
+                                <label class="form-control-label">USERNAME</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">PASSWORD</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password" id="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nombre" class="form-control-label  requiredField"> Nombre<span class="asteriskField">*</span> </label>
+                                <input class="form-control" name="nombre" placeholder="escribe tu nombre(s)" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidoPaterno" class="form-control-label requiredField"> Apellido Paterno<span class="asteriskField">*</span> </label>
+                                <input class="form-control" name="apellidoPaterno" placeholder="escribe tu primer apellido" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidoMaterno" class="form-control-label requiredField"> Apellido Materno<span class="asteriskField">*</span> </label>
+                                <input class="form-control" name="apellidoMaterno" placeholder="escribe tu segundo apellido" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="genero" class="form-control-label  requiredField"> Genero<span class="asteriskField">*</span> </label>
+                                <div class="controls" style="margin-bottom: 10px">
+                                    <label class=" form-control-label"> <input type="radio" name="genero" id="genero_1" value="H"  style="margin-bottom: 10px">H</label>
+                                    <label class="form-control-label"> <input type="radio" name="genero" id="genero_2" value="M"  style="margin-bottom: 10px">M </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="estado" class="form-control-label requiredField"> Estado<span class="asteriskField">*</span> </label>
+                                <input class="form-control" name="estado" placeholder="estado" style="margin-bottom: 10px" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cp" class="form-control-label requiredField"> CP<span class="asteriskField">*</span> </label>
+                                <input class="form-control" name="cp" placeholder="Codigo Postal" style="margin-bottom: 10px" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="calle" class="form-control-label requiredField"> Calle<span class="asteriskField">*</span> </label>
+                                <input class="form-control" name="calle" placeholder="Nombre Calle" style="margin-bottom: 10px" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label for="numcasa" class="form-control-label requiredField"> #Casa<span class="asteriskField">*</span> </label>
+                                <input class="form-control" name="numcasa" placeholder="# Casa" style="margin-bottom: 10px" type="text" />
+                            </div>
+
+                            <div class="col-lg-12 loginbttm">
+                                <div class="col-lg-6 login-btm login-text">
+                                    <!-- Error Message -->
+                                </div>
+                                <div class="col-lg-6 login-btm login-button">
+                                    <input type="submit" name="Signup" value="Registro" class="btn btn-primary btn btn-info" id="submit-id-signup" />
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2"></div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+body {
+    background: #03001C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B6EADA, #301E67);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B6EADA, #301E67);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-x: hidden;
+}
+
+main {
+    margin: 2rem;
+}
+
+.site-header a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
+    /*backdrop-filter: saturate(180%) blur(20px);*/
+}
+
+.site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*NAVEGACION*/
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion a {
+    display: inline-block;
+}
+
+.barra p {
+    text-align: center;
+    margin-right: 14.5rem;
+    font-size: 2rem;
+}
+
+
+/*PRUEBA*/
+
+.kodfun-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.kodfun-galeri>div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.kodfun-galeri>div:hover {
+    flex: 5;
+}
+
+
+/*SUGERENCIAS*/
+
+.vista-principal {
+    font-size: 7rem;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    background-color: transparent;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+
+.card img {
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.vista-derecha {
+    display: flex;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+
+/*MI CUENTA*/
+
+.card-usuario {
+    background: #1A2226;
+    width: 30rem;
+    max-height: 67rem;
+    border-radius: 3%;
+    position: relative;
+    overflow-y: auto;
+}
+
+.info-usuario {
+    width: 100%;
+    /* Ancho del div hijo */
+    height: 100%;
+    /* Altura del div hijo */
+    position: relative;
+    /* Establecer la posición absoluta */
+    top: 0;
+    /* Alinear el div hijo en la parte superior */
+    left: 0;
+    /* Alinear el div hijo en la parte izquierda */
+    box-sizing: border-box;
+    /* Incluir el padding y borde en el tamaño del div hijo */
+    color: #ECF0F5;
+    padding: 1rem;
+}
+
+.info-usuario p {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.info-usuario button {
+    margin-bottom: 3rem;
+}
+
+.cuenta-user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*SEgunda columna*/
+
+.columna-secundaria {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.info-tarjeta {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 29rem;
+    align-items: center;
+}
+
+.seccion-pedidos {
+    background-color: #1A2226;
+    width: 50rem;
+    max-height: 28rem;
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 2%;
+    padding: 3rem;
+    color: #ECF0F5;
+}
+
+.seccion-pedidos h2 {
+    margin-top: -3rem;
+}
+
+.tabla-pedidos {
+    border: 2px solid black;
+}
+
+.tabla-pedidos td {
+    border: 2px solid black;
+}
+
+.tabla-pedidos .titulo-tabla {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    font-weight: 800;
+}
+
+.tabla-pedidos .info-tabla {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+}
+
+
+/*TARJETA DE CREDITO CUENTA*/
+
+.card-tarjeta {
+    width: 340px;
+    height: 215px;
+    background: lightgrey;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.btm {
+    float: left;
+}
+
+.button {
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.foreground {
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    padding: 16px;
+    color: white;
+}
+
+.credit-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-card-chip-container {
+    margin: 8px 0;
+    height: 40px;
+    width: 40px;
+}
+
+.chip {
+    width: 100%;
+    height: 100%;
+}
+
+.category,
+.bank {
+    font-size: smaller;
+}
+
+.info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.names {
+    align-self: flex-end;
+    text-transform: uppercase;
+    font-size: smaller;
+}
+
+.serial {
+    align-self: flex-end;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.expire {
+    margin-left: 3px;
+    font-size: smaller;
+}
+
+/*REGISTRAR TARJETA*/
+
+.registroTarjeta{
+    background-color: #03001C;
+    position: absolute;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 3%;
+    margin-top: -50%;
+    margin-left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+.seccion-obscurecida{
+    background-color:rgb(56, 52, 52);
+    
+}
